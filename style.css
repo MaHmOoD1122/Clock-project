@@ -29,6 +29,7 @@ body {
 .clock {
   font-size: 9rem;
   display: flex;
+  width: 32rem;
   color: black;
   -webkit-text-stroke: 2px white;
   align-self: center;
@@ -122,5 +123,8 @@ body {
 @media (max-width: 400px) {
   html {
     font-size: 56%;
+  }
+  .date{
+    font-size: 3.5rem;
   }
 }
