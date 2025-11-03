@@ -1,0 +1,2 @@
+# Clock-project
+The idea for the project came to me when I learned "setInterval" in JavaScript, and it helped me improve a lot in many aspects, in both CSS and JavaScript.
