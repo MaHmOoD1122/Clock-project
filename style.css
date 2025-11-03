@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+body {
+  font-family: "Orbitron", sans-serif;
+  font-weight: 400;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  flex-direction: column;
+  transition: all 0.5s;
+}
+.main {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.clock {
+  font-size: 9rem;
+  display: flex;
+  color: black;
+  -webkit-text-stroke: 2px white;
+  align-self: center;
+  margin-bottom: 2rem;
+  text-shadow: 0 0rem 1.6rem rgba(255, 255, 255, 0.7);
+  transition: all 0.5s;
+}
+
+.light-mode .clock {
+  color: white;
+  -webkit-text-stroke: 3px black;
+  text-shadow: 0 0rem 1.3rem rgba(0, 0, 0, 0.6);
+}
+.btn {
+  width: 4.65rem;
+  height: 4.5rem;
+  background-color: transparent;
+
+  border: 2px solid white;
+  margin: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 3%;
+  top: 2%;
+  cursor: pointer;
+  transition: all 0.4s;
+  border-radius: 3rem;
+}
+.btn:hover {
+  box-shadow: 0 0 2.5rem rgba(255, 255, 255, 1);
+  transform: scale(1.05);
+}
+.btn:active {
+  transform: translateY(4px);
+}
+.sun path {
+  fill: white;
+}
+.sun {
+  height: 3rem;
+  width: 3rem;
+}
+.moon {
+  height: 3rem;
+  width: 3rem;
+  fill: black;
+}
+.light-mode {
+  background-color: white;
+  color: black;
+}
+
+.btn-light-mode {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+}
+.light-mode .btn:hover {
+  box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.6);
+}
+.hidden {
+  width: 0;
+  opacity: 0;
+}
+.day {
+  font-size: 4rem;
+  margin-block: 2rem;
+  text-shadow: 0 0 1.2rem rgba(255, 255, 255, 1);
+}
+.light-mode .day {
+  text-shadow: 0 0 1.2rem rgba(0, 0, 0, 0.6);
+}
+.date {
+  font-size: 4rem;
+  margin-block: 4rem;
+  text-shadow: 0 0 1.2rem rgba(255, 255, 255, 1);
+}
+.light-mode .date {
+  text-shadow: 0 0 1.2rem rgba(0, 0, 0, 0.6);
+}
+@media (max-width: 600px) {
+  html {
+    font-size: 58%;
+  }
+  .clock {
+    font-size: 7rem;
+  }
+}
+@media (max-width: 400px) {
+  html {
+    font-size: 56%;
+  }
+}
