@@ -7,3 +7,4 @@ The idea for the project came to me when I learned "setInterval" in JavaScript, 
 - JavaScript
 
 ## Live link 
+https://mahmood1122.github.io/Clock-project/
